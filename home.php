@@ -23,10 +23,11 @@ if (!isset($_SESSION['username'])) {
 }
 if (isset($_GET['logout'])) {
     session_destroy();
-    unset($_SESSION['username']);
+    unset($_SESSION['$username']);
     header("location: signin.php");
-    exit();
+   
 }
+$username = $_SESSION['username'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -55,7 +56,7 @@ if (isset($_GET['logout'])) {
     <!-- logged in user information -->
     <?php  if (isset($_SESSION['username'])) : ?>
 <p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
-    <p> <a href="index.html?logout='1'" style="color: red;">logout</a> </p>
+<p><a href="logout.php" style="color: red;">logout</a></p>
     <?php endif ?>
 </div>
 

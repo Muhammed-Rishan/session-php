@@ -20,7 +20,6 @@
   	<div class="input-group">
   	  <label>Password</label>
   	  <input type="password" id="password" name="password">
-		<!-- <p id="passwordError" style="display:none; color:red;">Password must be at least 8 characters long.</p> -->
   	</div>
   	<div class="input-group">
   		<button type="submit" class="btn" name="login_user">Login</button>
@@ -30,32 +29,4 @@
   	</p>
   </form>
 </body>
-<!-- <script>
-	 let form = document.getElementById("form");
-    let username = document.getElementById("username");
-    let password = document.getElementById("password");
-    let usernameError = document.getElementById("usernameError");
-    let passwordError = document.getElementById("passwordError");
-
-    form.addEventListener('submit', function(event) {
-      if (username.value.length < 3) {
-        event.preventDefault();
-        usernameError.style.display = "block";
-      } else {
-        usernameError.style.display = "none";
-      }
-
-      if (password.value.length < 8) {
-        event.preventDefault();
-        passwordError.style.display = "block";
-      } else {
-        passwordError.style.display = "none";
-      }
-
-      if (username.value == password.value) {
-        event.preventDefault();
-        alert("Error: Username and password cannot be the same.");
-      }
-    });
-</script> -->
 </html>

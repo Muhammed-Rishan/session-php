@@ -16,9 +16,10 @@
 
 session_start();
 if (isset($_SESSION['username'])) {
-    header("Location:home.php");
+    header("Location: home.php");
     exit();
 }
+
 
 function signIn()
 {
@@ -35,7 +36,7 @@ function signIn()
                 $_SESSION['username'] = $username;
                 $_SESSION['email'] = $registration['email'];
 
-                header("Location:home.php");
+                header("Location: home.php");
                 exit();
             }
         }

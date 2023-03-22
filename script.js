@@ -1,25 +1,3 @@
-// function submitForm(){
-//     var xhr = new XMLHttpRequest();
-//     xhr.onreadystatechange = function () {
-//       if (xhr.readyState === XMLHttpRequest.DONE) {
-//         if (xhr.status === 200) {
-//           alert("Registration successful!");
-//         } else {
-//           alert("Registration failed. Please try again later.");
-//         }
-//       }
-//     };
-//     xhr.open("POST", "reg.php", true);
-//     var formData = new FormData();
-//     formData.append("fname", fname);
-//     formData.append("email", email);
-//     formData.append("username", username);
-//     formData.append("password", password);
-//     xhr.send(formData);
-//     document.forms["regForm"].reset();
-//   }
-
-
 function validateForm() {
     var fname = document.getElementById("fname").value;
     var username = document.getElementById("username").value;
