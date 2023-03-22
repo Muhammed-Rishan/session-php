@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Signup</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body class="container">
+  <div class="header">
+  	<h2>Register</h2>
+  </div>
+
+  <form name="regForm" method="post" action="reg.php" onsubmit="return validateForm()">
+	
+
+  	<div class="input-group">
+  	  <label>Full Name</label>
+  	  <input  type="text" id="fname" name="fname" >
+		<span id="fnameError"></span>
+  	</div>
+		<div class="input-group">
+  	  <label>Username</label>
+  	  <input type="text" id="username" name="username">
+		<span id="usernameError"></span>
+  	</div>
+  	<div class="input-group">
+  	  <label>Email</label>
+  	  <input type="email" id="email" name="email">
+		<span id="emailError"></span>
+  	</div>
+  	<div class="input-group">
+  	  <label>Password</label>
+  	  <input type="password" id="password" name="password">
+		
+  	</div>
+
+  	<div class="input-group">
+	  <input type="submit" name="submit" class="btn" value="Submit">
+  	</div>
+  	<p>
+  		Already have an account <a href="signin.html">Sign in</a>
+  	</p>
+  </form>
+</body>
+
+</html>
